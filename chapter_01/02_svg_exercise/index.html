@@ -1,9 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+    </style>
   </head>
-  <body></body>
+  <body style="margin: 0">
+    <div style="width: 100%; max-width: 400px; margin: 10% auto; height: auto">
+      <svg viewBox="0 0 400 400" style="border: 1px solid darkblue">
+        <g transform="translate(100,100)">
+          <rect
+            width="200"
+            height="200"
+            fill="transparent"
+            stroke="black"
+            stroke-width="5"
+          />
+          <circle r="100" cx="100" cy="100" fill="plum" />
+          <line
+            x1="0"
+            y1="0"
+            x2="200"
+            y2="200"
+            stroke="black"
+            stroke-width="5"
+          />
+          <line
+            x1="200"
+            y1="0"
+            x2="0"
+            y2="200"
+            stroke="black"
+            stroke-width="5"
+          />
+        </g>
+        <g style="font-size: 18px; font-family: sans-serif">
+          <text x="200" y="90" text-anchor="middle">SVG - это прекрасно!</text>
+        </g>
+      </svg>
+    </div>
+  </body>
 </html>
