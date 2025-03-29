@@ -1,9 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SVG Shapes Gallery</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+      }
+    </style>
   </head>
-  <body></body>
+
+  <body>
+    <div style="width: 100%; max-width: 900px; margin: 0 auto">
+      <svg viewBox="0 0 900 400" style="border: 1px solid black">
+        <line
+          x1="50"
+          y1="45"
+          x2="140"
+          y2="225"
+          stroke="black"
+          stroke-width="3"
+        />
+        <rect
+          x="260"
+          y="45"
+          width="120"
+          height="60"
+          fill="#6ba5d7"
+          fill-opacity="0.8"
+        />
+        <rect
+          x="260"
+          y="125"
+          width="120"
+          height="60"
+          rx="20"
+          ry="20"
+          fill="#6ba5d7"
+        />
+        <rect
+          x="260"
+          y="205"
+          width="60"
+          height="60"
+          stroke="#6ba5d7"
+          stroke-width="2"
+          fill="transparent"
+        />
+        <circle
+          cx="530"
+          cy="80"
+          r="50"
+          fill="transparent"
+          stroke="#81c21c"
+          stroke-width="3"
+        />
+        <ellipse
+          cx="530"
+          cy="205"
+          rx="50"
+          ry="30"
+          fill="#81c21c"
+          stroke="#6ba5d7"
+          stroke-width="4"
+        />
+
+        <path
+          d="M680 150 C 710 80, 725 80, 755 150 S 810 220, 840 150"
+          fill="none"
+          stroke="#773b9a"
+          stroke-width="3"
+        />
+
+        <g transform="translate(140,285)">
+          <rect x="0" y="0" width="60" height="60" />
+          <text x="0" y="85">квадрат</text>
+        </g>
+        <g fill="#636466" style="font-size: 16px; font-family: monospace">
+          <text x="60" y="260">прямая линия</text>
+          <text x="260" y="290" text-anchor="start">прямоугольники</text>
+          <text x="530" y="155" text-anchor="middle">круг</text>
+          <text x="530" y="260" text-anchor="middle">эллипс</text>
+          <text x="755" y="245" text-anchor="middle">кривая</text>
+        </g>
+      </svg>
+    </div>
+  </body>
 </html>
