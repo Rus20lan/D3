@@ -26,13 +26,13 @@ const drawDonutCharts = (data) => {
     formats.forEach((format) =>{
       formattedData.push({format, sales:yearData[format]});
     })
-    console.log(formattedData);
+    // console.log(formattedData);
     // Инициализация генератора кругового макета
     const pieGenerator = d3.pie()
       .value(d => d.sales);
     // Создание аннотированных данных для кругового макета и сохранение в константе annotatedData
     const annotatedData = pieGenerator(formattedData);
-    console.log(annotatedData);
+    // console.log(annotatedData);
     // Инициализация генератора дуг
     const arcGenerator = d3.arc()
       .startAngle(d => d.startAngle)
